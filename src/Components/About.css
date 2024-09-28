@@ -1,0 +1,65 @@
+/* General section styles */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: url('/src/assets/images/pc-14.jpg') center/cover no-repeat;
+    position: relative; /* Ensure the section contains the pseudo-element */
+    overflow: hidden; /* To make sure the blurred background doesn't overflow */
+  }
+  
+  /* Blurred background pseudo-element */
+  .about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    filter: blur(10px); /* Add your desired blur */
+    z-index: -1; /* Place it behind the text */
+    opacity: 0.5; /* Adjust opacity if needed */
+  }
+  
+  /* About Us container with shadow */
+  .about-container {
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7); /* Make background semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    position: relative; /* Ensure text and container are above the blurred bg */
+    z-index: 1; /* Make sure the text is above the background */
+  }
+  
+  .about-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-container p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 20px;
+    }
+  
+    .about-container h2 {
+      font-size: 2em;
+    }
+  
+    .about-container p {
+      font-size: 1em;
+    }
+  }
+  

@@ -1,0 +1,47 @@
+/* ReviewList.css */
+.review-list {
+    margin-top: 20px;
+  }
+  
+  .review-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between reviews */
+  }
+  
+  .review {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Background color for the review box */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    transition: box-shadow 0.3s ease; /* Transition effect */
+  }
+  
+  .review:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .review-dp {
+    background-color: #ccc; /* Background color for the DP */
+    border-radius: 50%; /* Make it circular */
+    width: 50px; /* Width of DP */
+    height: 50px; /* Height of DP */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px; /* Space between DP and content */
+    font-size: 24px; /* Font size for the initial */
+    color: #fff; /* Color for the initial */
+  }
+  
+  .review-content {
+    flex-grow: 1; /* Allow this to take available space */
+  }
+  
+  .review-content strong {
+    display: block; /* Make name a block element */
+    margin-bottom: 5px; /* Space below name */
+  }
+  

@@ -1,0 +1,29 @@
+.home-section {
+    position: relative;
+    padding: 100px 20px;
+    background: url('/src/assets/images/pc-10.jpg') center/cover no-repeat; /* Adjust your background image */
+    color: #fff; /* White text for better readability */
+  }
+  
+  .welcome-container {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400; 
+    font-size: larger;
+    color: white;
+  }
+  
+  .thought-line {
+    font-weight: 400; 
+    font-size: larger;
+    margin-top: 20px;
+    font-style: italic; /* Italic style for thought line */
+    color: rgb(211, 202, 202); /* White color for better visibility */
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400; 
+    font-weight: bolder;
+  }
+  
+  

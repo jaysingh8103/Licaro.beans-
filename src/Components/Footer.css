@@ -1,0 +1,100 @@
+.footer {
+    background: linear-gradient(135deg, #5B3A29, #272625,  #9e705f); /* Gradient background */
+    background-size: 400% 400%; /* Increase background size for animation */
+    animation: glitter 15s ease infinite; /* Animation for glitter effect */
+    color: #F6F1D3; /* Cream text */
+    padding: 40px 20px; /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content */
+    border-top: 2px solid #D9C4A3; /* Warm Tan top border for accent */
+}
+
+@keyframes glitter {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.footer-container {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Responsive max width */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping */
+    margin-bottom: 20px; /* Space between sections and bottom */
+}
+
+.footer-section {
+    flex: 1; /* Each section takes equal space */
+    margin: 10px;
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.footer-section:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #D9C4A3; /* Underline section titles */
+    padding-bottom: 10px;
+    font-size: 1.5rem; /* Increased font size */
+    color: #D9C4A3; /* Warm Tan for headings */
+}
+
+.nav-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.nav-links li {
+    margin: 5px 0; /* Space between links */
+}
+
+.nav-links a {
+    color: #F6F1D3; /* Cream color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Animation effect */
+}
+
+.nav-links a:hover {
+    color: #FF7F50; /* Burnt Orange on hover */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #F6F1D3; /* Cream color for social icons */
+    transition: color 0.3s; /* Animation effect */
+}
+
+.social-icons a:hover {
+    color: #D9C4A3; /* Warm Tan on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space between sections and bottom */
+    text-align: center; /* Center align text */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.footer-logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below logo */
+}
+
+.footer-section p {
+    display: flex;
+    align-items: center; /* Align icons with text */
+    margin: 5px 0; /* Space between lines */
+    color: #F6F1D3; /* Cream color for text */
+}
+
+.footer-section p a {
+    margin-left: 5px; /* Space between icon and text */
+    color: #F6F1D3; /* Cream color for links */
+}

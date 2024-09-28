@@ -1,0 +1,104 @@
+/* General navbar styles */
+.navbar {
+    background: rgba(0, 0, 0, 0.2); /* Transparent background */
+    height: 60px; /* Smaller height */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, height 0.3s ease;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%; /* Ensure content is vertically centered */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 70px; /* Adjust the logo size to match smaller height */
+    margin-right: 0px;
+  }
+  
+  .navbar-logo h1 {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.8em; /* Slightly smaller font for the logo text */
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffbe0b;
+  }
+  
+  /* Menu icon for mobile */
+  .menu-icon {
+    display: none;
+    font-size: 1.8em;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Active menu links in mobile mode */
+  .navbar-links.active {
+    display: block;
+    position: absolute;
+    top: 60px; /* Adjust to match smaller height */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .navbar-links.active a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  /* Sticky behavior on scroll */
+  .sticky {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 60px; /* Keep height small on scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .navbar-logo h1 {
+      font-size: 1.6em;
+    }
+  }
+  
