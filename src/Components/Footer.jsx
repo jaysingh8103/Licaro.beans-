@@ -23,11 +23,11 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <p>
             <FontAwesomeIcon icon={faPhone} /> 
-            <a href="tel:+1234567890"> +91 9699474208</a>
+            <a href="tel:+1234567890"> +91 9767700077</a>
           </p>
           <p>
             <FontAwesomeIcon icon={faEnvelope} /> 
-            <a href="mailto:info@licaro.beans">licaro.@gmail.com</a>
+            <a href="mailto:info@licaro.beans">licaro.beverages@gmail.com</a>
           </p>
           <p>Kothrud , Pune</p>
         </div>
