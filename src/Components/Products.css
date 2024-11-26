@@ -49,6 +49,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
   }
   
   .product-front {
@@ -57,6 +59,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    
   }
   
   .product-bg-image {
@@ -69,6 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Align overlay to the bottom */
+    
   }
   
   .product-overlay {
@@ -85,6 +89,7 @@
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 5px;
+  
   }
   
   .product-back {

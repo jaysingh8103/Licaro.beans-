@@ -20,7 +20,7 @@ const Navbar = () => {
           <a href="#home">Home</a>
           <a href="#about">About Us</a>
           <a href="#products">Products</a>
-          <a href="#contact">Contact</a>
+          <a href="#footer">Contact</a>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
           <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
